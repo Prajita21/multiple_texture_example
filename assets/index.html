@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple texture demo</title>
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+</head>
+<body>
+        <div id="page-wrap">
+			<div id="canvas"></div>
+			<div class="flex-wrapper multi-textures">
+				<span>Click me !</span>
+				<!-- notice here we are using the data-sampler attribute to name our displacement sampler uniform -->
+				<img src="/assets/Images/img1.jpg" crossorigin="" data-sampler="displacement" />
+				<img src="/assets/Images/img2.jpg" crossorigin="" />
+				<img src="/assets/Images/img3.jpg" crossorigin="" />
+				<img src="/assets/Images/img4.jpg" crossorigin="" />
+			</div>
+		</div>
+        <script src="/assets/script.js" type="module"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script>
+		  	window.dataLayer = window.dataLayer || [];
+		  	function gtag(){dataLayer.push(arguments);}
+		  	gtag('js', new Date());
+
+		  	gtag('config', 'UA-141413267-1');
+		</script>
+
+    
+</body>
+</html>
